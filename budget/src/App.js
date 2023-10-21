@@ -1,23 +1,30 @@
-import './App.css';
-import AddExpenseForm from './pages/AddExpenseForm';
-import EditBudget from './pages/EditBudget';
-import ExpenseItem from './pages/ExpenseItem';
-import Home from './components/Home';
-import NavBar from './components/NavBar';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Budget from './components/Budget'
+import AddExpenseForm from './components/AddExpenseForm';
+import EditBudget from './components/EditBudget';
+import ExpenseItem from './components/ExpenseItem';
+import Remaining from './components/Remaining';
+import ExpenseTotal from './components/ExpenseTotal';
 
-function App() {
-
-
+const App = () => {
   return (
-    <div className="App">
-      <NavBar />
-
-      <AddExpenseForm />
-      <EditBudget />
-      <ExpenseItem />
-      <Home />
+    <div className='container'>
+      <h1 className='mt-3'>My Budget Planner</h1>
+      <div className="row mt-3">
+        <div className="col-sm">
+          <Budget />
+        </div>
+        <div className='col-sm'>
+          <Remaining  />
+        </div>
+        <div className='col-sm'>
+          <ExpenseTotal />
+        </div>
+      </div>
+      <h3 className='mt-3'>Expenses</h3>
     </div>
   );
-}
+};
 
 export default App;
