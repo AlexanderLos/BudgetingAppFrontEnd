@@ -49,11 +49,11 @@ const AddExpenseForm = (props) => {
             onChange={(event) => setCost(event.target.value)}
           ></input>
         </div>
-        <div className='col-sm'>
-          <button type='submit' className='btn btn-primary'>
-            Save
-          </button>
-        </div>
+        <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
+  <button type="submit" className="btn btn-primary">
+    Save
+  </button>
+</div>
       </div>
     </form>
   )
