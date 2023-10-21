@@ -6,24 +6,39 @@ import EditBudget from './components/EditBudget';
 import ExpenseItem from './components/ExpenseItem';
 import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
+import ExpenseList from './components/ExpenseList';
+import { AppProvider } from './context/AppContext';
 
 const App = () => {
   return (
-    <div className='container'>
-      <h1 className='mt-3'>My Budget Planner</h1>
-      <div className="row mt-3">
-        <div className="col-sm">
-          <Budget />
+    <AppProvider>
+      <div className='container'>
+      <h1 className='mt-3'>Expense App</h1>
+        <div className="row mt-3">
+          <div className="col-sm">
+            <Budget />
         </div>
         <div className='col-sm'>
-          <Remaining  />
+            <Remaining  />
         </div>
         <div className='col-sm'>
-          <ExpenseTotal />
+            <ExpenseTotal />
         </div>
       </div>
       <h3 className='mt-3'>Expenses</h3>
+      <div className='row mt-3'>
+          <div className='col-sm'>
+            <ExpenseList />
+          </div>
+      </div>
+      <h3 className='mt-3'>App Expense</h3>
+      <div className='mt-3'>
+        <div className='col-sm'>
+          <AddExpenseForm />
+        </div>
+      </div>
     </div>
+    </AppProvider>
   );
 };
 
