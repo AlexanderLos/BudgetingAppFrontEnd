@@ -1,5 +1,5 @@
 const EditBudget = (props) => {
-    return <h1></h1>;
+    return <h1>Edit</h1>;
   }
   
   export default EditBudget;

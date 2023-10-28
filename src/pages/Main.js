@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Budget from '../components/Budget'
 import AddExpenseForm from '../components/AddExpenseForm';
@@ -8,6 +8,7 @@ import Remaining from '../components/Remaining';
 import ExpenseTotal from '../components/ExpenseTotal';
 import ExpenseList from '../components/ExpenseList';
 import { AppProvider } from '../context/AppContext';
+import GIFPopUp from '../components/GIFPopUp';
 
 const Main = () => {
   return (
@@ -36,6 +37,9 @@ const Main = () => {
         <div className='col-sm'>
           <AddExpenseForm />
         </div>
+      </div>
+      <div>
+        <GIFPopUp />
       </div>
     </div>
     </AppProvider>

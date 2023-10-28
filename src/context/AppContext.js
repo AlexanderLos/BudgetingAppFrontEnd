@@ -1,5 +1,5 @@
 // create a context, this is the thing our components import and use to get the state
-import { createContext, useReducer } from 'react';
+import { createContext, useReducer, useState } from 'react';
 
 const AppReducer = (state, action) => {
     switch (action.type) {
