@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+// import React, { useContext } from 'react'; // Not being used.
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Budget from '../components/Budget'
 import AddExpenseForm from '../components/AddExpenseForm';
-import EditBudget from '../components/EditBudget';
-import ExpenseItem from '../components/ExpenseItem';
+// import EditBudget from '../components/EditBudget'; // Not being use.d
+// import ExpenseItem from '../components/ExpenseItem'; //These are not defined so i am commenting them out 
 import Remaining from '../components/Remaining';
 import ExpenseTotal from '../components/ExpenseTotal';
 import ExpenseList from '../components/ExpenseList';

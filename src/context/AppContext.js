@@ -1,5 +1,5 @@
 // create a context, this is the thing our components import and use to get the state
-import { createContext, useReducer, useState } from 'react';
+import { createContext, useReducer } from 'react';
 
 const AppReducer = (state, action) => {
     switch (action.type) {
@@ -48,3 +48,6 @@ export const AppProvider = (props) => {
         </AppContext.Provider>
     );
 };
+
+
+// UseState isn't being used so i removed it. 
