@@ -13,7 +13,7 @@ const GIFPopUp = () => {
         fetch("https://protected-hollows-19359-274bca1c8068.herokuapp.com/gif")
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('Error');
                 }
                 return response.json();
             })
@@ -21,7 +21,7 @@ const GIFPopUp = () => {
                 setGifURL(data); 
             })
             .catch(error => {
-                console.error('There has been a problem with your fetch operation:', error);
+                console.error(error);
             });
     }, []);
 
